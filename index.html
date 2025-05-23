@@ -9,52 +9,57 @@
 </head>
 <body>
 
-	<div class="obal">
+	<div class="wrap">
 
-		<!-- menu -->
-		<ul>
-			<li>SUPER APPKA</li>
-			<li><a href="#">Úžasný design</a></li>
-			<li><a href="#">Boží funkce</a></li>
-			<li><a href="#">Zdarma ke stažení</a></li>
+		
+		<ul class="menu">
+			<li class="menu__item menu__item--inactive">SUPER APPKA</li>
+			<li class="menu__item"><a href="#">Úžasný design</a></li>
+			<li class="menu__item"><a href="#">Boží funkce</a></li>
+			<li class="menu__item"><a href="#">Zdarma ke stažení</a></li>
 		</ul>
 
 
-		<!-- hero sekce / banner -->
-		<h1>Super Appka</h1>
+		<div class="hero">
 
-		<p>
-			Úžasná mobilní aplikace,
-			<br> která Ti změní život.
-		</p>
+			<h1 class="hero__title">Super Appka</h1>
 
-		<a href="#">Stáhnout zdarma</a>
-		<a href="#">Více informací</a>
+			<p class="hero__text" >
+				Úžasná mobilní aplikace,
+				<br> která Ti změní život.
+			</p>
 
-		<img src="images/telefon.png" alt="Telefon">
+			<a class="hero__button hero__button--first" href="#">Stáhnout zdarma</a>
+			<a class="hero__button hero__button--second" href="#">Více informací</a>
 
+			<img class="hero__img" src="images/telefon.png" alt="Telefon">
 
-
-
-		<!-- obsah se 3 sloupci -->
-		<img src="images/letadlo.svg" alt="Letadlo">
-		<h2>Cestuj po světě</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
-
-		<img src="images/bubliny.svg" alt="Bubliny">
-		<h2>Chatuj s přáteli</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
-
-		<img src="images/mapa.svg" alt="Mapa">
-		<h2>Zažij dobrodružství</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
+		</div>
 
 
-		<!-- patička -->
-		<p>&copy;2020, Czechitas</p>
+		<div class="container">
+			<section class="panel">
+				<img class="panel__img panel__img--let" src="images/letadlo.svg" alt="Letadlo">
+				<h2 class="panel__title">Cestuj po světě</h2>
+				<p class="panel__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
+			</section>
+			<section class="panel">
+				<img class="panel__img panel__img--bub" src="images/bubliny.svg" alt="Bubliny">
+				<h2 class="panel__title">Chatuj s přáteli</h2>
+				<p class="panel__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
+			</section>
+			<section class="panel">
+				<img class="panel__img panel__img--map" src="images/mapa.svg" alt="Mapa">
+				<h2 class="panel__title">Zažij dobrodružství</h2>
+				<p class="panel__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
+			</section>
+		</div>
 
+		<footer class="footer">
+			<p class="footer__text">&copy;2020, Czechitas</p>
+		</footer>
 
-	</div><!-- konec obalu -->
+	</div>
 
 </body>
 </html>
