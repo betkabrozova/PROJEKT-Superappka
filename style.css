@@ -38,7 +38,7 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
-@media screen and (min-width: 1100px){
+
 .menu{
 	margin: 0;
 	padding: 0;
@@ -48,7 +48,7 @@ body {
 .menu__item{
 	list-style: none;
 }
-.menu__item--inactive{
+.menu__item--name{
 	padding: 20px 30px;
 	font-weight: 700;
 }
@@ -62,7 +62,6 @@ a:hover{
 	background-color: var(--dark);
 	color: white;
 }
-
 .hero{
 	background-image: url(images/pozadi.jpg);
 	background-size: 100%;
@@ -101,10 +100,8 @@ a:hover{
 .hero__button:hover{
 	background-color: var(--light);
 }
-
 .container{
 	display: flex;
-	
 	
 }
 .panel{
@@ -137,4 +134,119 @@ a:hover{
 	margin: 0;
 	font-size: 13px;
 }
-}
+
+
+@media screen and (max-width: 960px){
+	.wrap{
+		max-width: 680px;
+	}
+	.hero{
+		background-size: cover;
+		padding: 30px 30px ;
+	}
+	.hero__title{
+		font-size: 70px;
+	}
+	.hero__text{
+		font-size: 26px;
+	}
+	.hero__img{
+		width: 280px;
+	}
+	.hero__box{
+		flex-direction: column;
+		align-items: center;
+		width: fit-content;
+	}
+	.hero__button{
+		margin-bottom: 0;
+		font-size: 18px;
+		padding: 10px 25px;
+	}
+	
+	.panel{
+		padding: 20px;
+	}
+	.panel__img{
+		width: 50px;
+		margin: 10px auto;
+	}
+	.panel__title{
+		font-size: 18px;
+	}
+	.footer{
+		padding: 13px;
+		margin: 20px 0px;
+	}
+	.footer__text{
+		margin: 0;
+		font-size: 13px;
+	}
+	}
+
+	@media screen and (max-width: 680px){
+		.wrap{
+			max-width: 400px;
+		}
+		.menu{
+			flex-wrap: wrap;
+		}
+		.menu__item{
+			flex-grow: 1;
+			flex-basis: 50%;
+			font-size: 15px;
+			text-align: center;
+		}
+		.menu__item--name{
+			padding: 8px 13px;
+		}
+		.hero__button a{
+			width: 100%;
+			text-align: center;
+			padding: 8px 13px;
+		}
+		.hero{
+			background-size: cover;
+			padding: 20px 20px ;
+			min-height: 300px;
+		}
+		.hero__title{
+			font-size: 50px;
+		}
+		.hero__text{
+			font-size: 20px;
+		}
+		.hero__img{
+			width: 180px;
+		}
+		.hero__box{
+			flex-direction: column;
+			align-items: center;
+			width: fit-content;
+			justify-content: flex-start;
+			gap: 15px;
+		}
+		.hero__button{
+			margin-bottom: 0;
+			font-size: 15px;
+			padding: 8px 13px;
+		}
+		.panel{
+			padding: 20px;
+		}
+		.panel__img{
+			width: 50px;
+			margin: 10px auto;
+		}
+		.panel__title{
+			font-size: 18px;
+		}
+		.footer{
+			padding: 13px;
+			margin: 20px 0px;
+		}
+		.footer__text{
+			margin: 0;
+			font-size: 13px;
+		}
+		}
