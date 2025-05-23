@@ -27,6 +27,7 @@ body {
 	font-family: "Source Sans 3", sans-serif;
  	font-optical-sizing: auto;
   	font-style: normal;
+	background-color:#e5e5e5 ;
 }
 
 .wrap {
@@ -37,7 +38,7 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
-
+@media screen and (min-width: 1100px){
 .menu{
 	margin: 0;
 	padding: 0;
@@ -95,4 +96,45 @@ a:hover{
 	border: 1px solid white;
 	border-radius: 12px;
 	font-size: 20px;
+	padding: 15px 30px;
+}
+.hero__button:hover{
+	background-color: var(--light);
+}
+
+.container{
+	display: flex;
+	
+	
+}
+.panel{
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+}
+.panel__img{
+	width: 60px;
+	margin: 10px auto;
+}
+.panel__title{
+	font-size: 20px;
+	font-weight: 700;
+	color: var(--light);
+	text-align: center;
+}
+.panel__text{
+	text-align: center;
+	margin: 0;
+}
+.footer{
+	background-color: var(--dark);
+	text-align: center;
+	color: white;
+	padding: 15px;
+	margin: 20px 0px;
+}
+.footer__text{
+	margin: 0;
+	font-size: 13px;
+}
 }
