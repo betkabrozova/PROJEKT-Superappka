@@ -12,6 +12,10 @@ html { box-sizing: border-box; }
  Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
 https://fonts.google.com/specimen/Source+Sans+Pro
 */
+:root{
+	--light: #48418e;
+	--dark:#462475;
+}
 
 body {
 	padding: 0;
@@ -23,7 +27,7 @@ body {
 	line-height: 1.5;
 }
 
-.obal {
+.wrap {
 	max-width: 960px; /* obsah stránky je omezený do pruhu širokého max. 960px */
 	margin: 0 auto; /* pruh je na stránce vycentrovaný */
 	background: white;
@@ -31,3 +35,27 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+.menu{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	margin-top: 20px;
+}
+.menu__item{
+	list-style: none;
+}
+.menu__item--inactive{
+	padding: 20px 30px;
+	font-weight: 700;
+}
+.menu__item a{
+	text-decoration: none;
+	color: black;
+	padding: 20px 30px;
+	display: inline-block;
+}
+.menu__item a:hover{
+	background-color: var(--dark);
+	color: white;
+}
