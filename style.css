@@ -197,8 +197,12 @@ a:hover{
 			font-size: 15px;
 			text-align: center;
 		}
+		.menu__item a{
+			width: 100%;
+			padding: 10px 30px;
+		}
 		.menu__item--name{
-			padding: 8px 13px;
+			padding: 10px 30px;
 		}
 		.hero__button a{
 			width: 100%;
@@ -231,8 +235,13 @@ a:hover{
 			font-size: 15px;
 			padding: 8px 13px;
 		}
+		.container{
+			display: flex;
+			flex-direction: column;
+		}
 		.panel{
-			padding: 20px;
+			padding: 13px 20px;
+			font-size: 15px;
 		}
 		.panel__img{
 			width: 50px;
@@ -240,6 +249,7 @@ a:hover{
 		}
 		.panel__title{
 			font-size: 18px;
+			margin: 10px 0px;
 		}
 		.footer{
 			padding: 13px;
